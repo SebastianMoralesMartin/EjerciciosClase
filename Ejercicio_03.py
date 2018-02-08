@@ -8,7 +8,7 @@ imc = peso/altura**2
 
 print("Tu IMC es de %10.2f" % imc)
 
-if imc < 18.5:
+if imc > 0 and imc < 18.5:
     print("Sufres de bajo peso!!!")
 elif imc >= 18.5 and imc < 25:
     print("Estas en tu peso ideal!!!")
@@ -25,4 +25,5 @@ elif imc >= 40 and imc < 50:
 elif imc >= 50:
     print('Sufres de "Obesidad Tipo IV (Extrema)')
 else:
-    print("¿Cómo putas estas vivo?")
+    for numero in range(1,100):
+        print("¿Cómo putas estas vivo?")
