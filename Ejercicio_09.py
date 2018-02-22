@@ -10,7 +10,7 @@ winMessages= ["Insane dubs!", "Magnific dubs!", "Nice dubs!"]
 
 def calculateDubs(number):
     dubs = random.randint(0, 99999999999)
-    if dubs % 2 == 0:
+    if dubs % 7 == 0:
         win = number * 10
         message = ("You rolled %d and won %d points!" % (dubs, win))
     else:
