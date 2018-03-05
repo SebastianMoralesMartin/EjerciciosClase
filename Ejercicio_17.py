@@ -4,7 +4,7 @@
 
 def aproximarPI(n):         #Aproxima PI con el valor n
     suma = 0
-    contador = 19999))
+    contador = 19999
     for d in range (1, n+1, 2):
         if contador%2 == 1:
             suma+= 1/d
@@ -15,4 +15,4 @@ def aproximarPI(n):         #Aproxima PI con el valor n
 
 
 
-print(aproximarPI(9999
+print(aproximarPI(9999))
