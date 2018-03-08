@@ -44,7 +44,7 @@ def dibujar():
         ventana.blit(toad, (xTortuga, ANCHO//2))
 
         if xTortuga < ANCHO-64:
-            xTortuga += 20
+            xTortuga += 2
 
         pygame.display.flip()   # Actualiza trazos
         reloj.tick(40)          # 40 fps
