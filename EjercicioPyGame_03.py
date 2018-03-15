@@ -13,6 +13,8 @@ VERDE_BANDERA = (0, 122, 0)
 ROJO = (255, 0, 0)
 NEGRO = (0, 0, 0)
 
+
+
 def drawRose(ventana, m, k):
     for alfa in range(0, 360, 1):
         alfaRad = radians(alfa)
@@ -21,6 +23,8 @@ def drawRose(ventana, m, k):
         y = ALTO//2 - int(r*sin(alfaRad))
         randomColor = (ran(0, 255), ran(0, 255), ran(0, 255))
         pygame.draw.circle(ventana, randomColor, (x, y), 100, 2)
+
+
 
 # Estructura básica de un programa que usa pygame para dibujar
 def dibujar():
