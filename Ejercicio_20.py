@@ -1,8 +1,17 @@
-# Sebastian Morales Martin
-# encoding: UTF-8
-# Ejercicio_20: listas (pendejas)
+#encoding: UTF-8
+# Sebastian Morales Martín
+# Ejercicio_21: palíndromos
 
-def invertir(lista):
+
+def quitarEspacios(args):
+    sinEspacios = []
+    for numero in args:
+        if numero != ' ':
+            sinEspacios.append(numero)
+    return sinEspacios
+
+
+def invertirLista(lista):
     contador = len(lista) - 1
     nuevaLista = []
     for numero in lista:
@@ -11,22 +20,16 @@ def invertir(lista):
     return nuevaLista
 
 
-
 def main():
-    listaValores = []
-    valor = int(input('Valor a agregar (Teclea "-1" para terminar la lista): '))
-    while valor != -1:
-        listaValores.append(valor)
-        valor = int(input('Valor a agregar (Teclea "-1" para terminar la lista): '))
-    print("Datos: ", listaValores)
-    print("Número de datos: ", len(listaValores))
-    if len(listaValores)>0:
-        print("Dato mayor: ", max(listaValores))
-        print("Dato menor: ", min(listaValores))
-        promedio = sum(listaValores)/ len(listaValores)
-        print("Promedio: ", promedio)
 
-    invertida = invertir(listaValores)
-    print("Lista invertida: ", invertida)
+    palindromo = input('Teclea el posible palindromo: ')
+    cadena = palindromo.upper()
+    listaOriginal = list(cadena)
+    sinEspacios = quitarEspacios(listaOriginal)
+    inversa = invertirLista(sinEspacios)
+    if inversa == sinEspacios:
+        print('%s es palindromo'% palindromo)
+    else:
+        print('%s no es palindromo' % palindromo)
 
 main()
